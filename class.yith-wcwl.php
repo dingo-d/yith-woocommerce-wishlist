@@ -280,7 +280,7 @@ if( !class_exists( 'YITH_WCWL' ) ) {
         public function get_addtowishlist_url() {
             global $product;
             	
-            $url = YITH_WCWL_URL . "yith-wcwl-ajax.php?action=add_to_wishlist&add_to_wishlist=" . $product->id;
+            $url = YITH_WCWL_URL . "yith-wcwl-ajax.php?action=add_to_wishlist&amp;add_to_wishlist=" . $product->id;
             
             return $url;
         }
